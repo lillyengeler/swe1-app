@@ -33,7 +33,8 @@ deploy:
   region: "us-west-2"
   app: "django-tutorial"
   env: "django-env"
-  bucket_name: "django-tutorial-bucket"
+  bucket_name: "elasticbeanstalk-us-west-2-221990063791"
+  skip_cleanup: true
   on:
     all_branches: true
 
