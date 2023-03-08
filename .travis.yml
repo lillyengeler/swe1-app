@@ -1,5 +1,13 @@
 
-#comment
 language: python
+
 python:
   - "3.4"
+
+install:
+   - pip install -r requirements.txt
+
+script:
+  # run black code formatter
+  - black --check.
+  
