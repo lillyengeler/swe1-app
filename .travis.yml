@@ -7,8 +7,12 @@ python:
 install:
    - pip install -r requirements.txt
    - pip install black
+   - python -m pip install flake8
 
 script:
   # run black code formatter
-  - black --check .
+  #- black --check .
+
+  # run flake8 linter
+  - flake8 .
 
