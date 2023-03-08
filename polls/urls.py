@@ -1,5 +1,5 @@
 from django.urls import path # noqa F401
-from django.conf.urls import url
+from django.conf.urls import url # noqa F401
 
 from . import views
 
