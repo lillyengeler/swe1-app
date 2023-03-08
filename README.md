@@ -1,0 +1,1 @@
+![build-status badge](https://app.travis-ci.com/lillyengeler/swe1-app.svg?branch=main)
