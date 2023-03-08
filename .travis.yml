@@ -15,7 +15,7 @@ script:
   # run black code formatter -
   - black .
 
-  # run flake8 linter
+  # run flake8 linter -
   - flake8 .
 
   # coverage -
