@@ -12,7 +12,7 @@ install:
    - pip install coveralls
 
 script:
-  # run black code formatter
+  # run black code formatter -
   - black .
 
   # run flake8 linter
@@ -26,8 +26,8 @@ after_script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "AKIATHL5DR2XUVVXWSEE"
-  secret_access_key: "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"
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
   region: "us-west-2"
   app: "django-tutorial"
   env: "django-env"
