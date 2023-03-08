@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.urls import include, re_path as url
+from django.urls import include, re_path as url # noqa F401
 # from django.conf.urls import url 
 
 urlpatterns = [
