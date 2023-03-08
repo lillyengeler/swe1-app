@@ -8,6 +8,8 @@ install:
    - pip install -r requirements.txt
    - pip install black
    - python -m pip install flake8
+   - pip install coverage
+   - pip install coveralls
 
 script:
   # run black code formatter
@@ -15,4 +17,10 @@ script:
 
   # run flake8 linter
   - flake8 .
+
+  # coverage
+  - coverage run manage.py test polls
+
+after_script:
+  - coveralls
 
