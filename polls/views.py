@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, HttpResponseRedirect # noqa F401
-from django.template import loader # noqa F401
+from django.http import HttpResponse, HttpResponseRedirect 
+from django.template import loader 
 from .models import Question, Choice
-from django.http import Http404 # noqa F401
+from django.http import Http404 
 from django.urls import reverse
 from django.views import generic
 
