@@ -6,8 +6,9 @@ python:
 
 install:
    - pip install -r requirements.txt
+   - pip install black
 
 script:
   # run black code formatter
   - black --check.
-  
+
